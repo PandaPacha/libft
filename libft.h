@@ -6,7 +6,7 @@
 /*   By: mafagot <mafagot@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 17:02:24 by mafagot           #+#    #+#             */
-/*   Updated: 2015/05/05 15:40:45 by mafagot          ###   ########.fr       */
+/*   Updated: 2015/05/05 17:45:26 by mafagot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,6 @@ typedef struct		s_list
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
-
-
 
 typedef struct		s_var
 {
