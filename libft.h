@@ -6,17 +6,22 @@
 /*   By: mafagot <mafagot@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 17:02:24 by mafagot           #+#    #+#             */
-/*   Updated: 2014/11/25 16:31:41 by mafagot          ###   ########.fr       */
+/*   Updated: 2015/05/05 15:40:45 by mafagot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <ctype.h>
+# include <sys/types.h>
+# include <sys/uio.h>
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
 # include <limits.h>
+
+# define BUFF_SIZE 128
 
 typedef struct		s_list
 {
@@ -24,6 +29,15 @@ typedef struct		s_list
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
+
+
+
+typedef struct		s_var
+{
+	char			*tmp;
+	char			*buf;
+	int				i;
+}					t_var;
 
 unsigned int		ft_abs(int nb);
 int					ft_atoi(const char *str);
@@ -33,6 +47,7 @@ int					ft_isalpha(int c);
 int					ft_isascii(int c);
 int					ft_isdigit(int c);
 int					ft_isprint(int c);
+int					ft_isspace(int c);
 char				*ft_itoa(int n);
 void				*ft_memalloc(size_t size);
 void				*ft_memccpy(void *dts, const void *src, int c, size_t ln);
@@ -88,5 +103,7 @@ void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 size_t				ft_lstsize(t_list *lst);
+
+int					get_next_line(const int fd, char **line);
 
 #endif

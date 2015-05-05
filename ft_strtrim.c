@@ -6,19 +6,11 @@
 /*   By: mafagot <mafagot@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 16:50:21 by mafagot           #+#    #+#             */
-/*   Updated: 2014/11/08 16:12:01 by mafagot          ###   ########.fr       */
+/*   Updated: 2015/05/05 15:45:11 by mafagot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	ft_isspace(int c)
-{
-	if (c == ' ' || c == '\n' || c == '\t')
-		return (1);
-	else
-		return (0);
-}
 
 char		*ft_strtrim(char const *s)
 {

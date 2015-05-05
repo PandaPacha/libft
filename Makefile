@@ -6,7 +6,7 @@
 #    By: mafagot <mafagot@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/08 17:11:41 by mafagot           #+#    #+#              #
-#    Updated: 2015/04/04 17:58:49 by mafagot          ###   ########.fr        #
+#    Updated: 2015/05/05 15:43:46 by mafagot          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME=libft.a
 
 FLAGS=-Wall -Wextra -Werror
 
-RM=rm -f
+RM= /bin/rm -f
 
 SRC_PATH = ./
 OBJ_PATH = ./
@@ -28,6 +28,7 @@ ft_isalpha.c \
 ft_isascii.c \
 ft_isdigit.c \
 ft_isprint.c \
+ft_isspace.c \
 ft_itoa.c \
 ft_lstadd.c \
 ft_lstdel.c \
@@ -82,7 +83,8 @@ ft_strsub.c \
 ft_strtrim.c \
 ft_swap.c \
 ft_tolower.c \
-ft_toupper.c
+ft_toupper.c \
+get_next_line.c
 
 FILE_OBJ = $(FILE_SRC:.c=.o)
 
