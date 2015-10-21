@@ -6,18 +6,21 @@
 /*   By: mafagot <mafagot@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 15:57:14 by mafagot           #+#    #+#             */
-/*   Updated: 2014/11/08 16:10:02 by mafagot          ###   ########.fr       */
+/*   Updated: 2015/10/21 15:41:11 by mafagot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+size_t		ft_strlen(const char *str)
 {
-	unsigned int	i;
+	size_t	len;
 
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
+	len = 0;
+	if (str)
+	{
+		while (*str++)
+			len++;
+	}
+	return (len);
 }

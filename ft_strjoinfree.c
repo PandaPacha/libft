@@ -6,7 +6,7 @@
 /*   By: mafagot <mafagot@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/15 14:40:29 by mafagot           #+#    #+#             */
-/*   Updated: 2014/12/15 14:40:32 by mafagot          ###   ########.fr       */
+/*   Updated: 2015/10/21 15:41:43 by mafagot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char			*ft_strjoinfree(char *s1, char *s2)
 {
-	unsigned int		len1;
-	unsigned int		len2;
-	char				*tmp;
+	size_t		len1;
+	size_t		len2;
+	char		*tmp;
 
 	if (!s1 && s2)
 		return (s2);
